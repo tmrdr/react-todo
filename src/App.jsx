@@ -8,7 +8,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <List items={["walk dog", "eat sandwich", "do code"]} />
+
+        <List items={["eat dog", "walk sandwich", "return video tapes", "etc..", ]} />
       </div>
     );
   }

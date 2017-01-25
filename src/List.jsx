@@ -8,10 +8,19 @@ class List extends Component {
       const items = this.props.items.map(item => {
         return <ListItem item={item}></ListItem>
       });
+  function handleClick(e) {
+  e.preventDefault();
+  console.log('The link was clicked.');
+  items.push("hello");
+}
 
       return(
           <div>
-            <h1>Toby</h1>
+          <h1>To Do:</h1>
+            <form>
+              <input type="text"></input>
+              <input type="submit" onClick={handleClick}></input>
+            </form>
             <ul>{items}</ul>
           </div>
       );
